@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Important Message</title>
-		<style>
-			body {
-				background-color: #0000ef;
-				text-align: center;
-				
-			}
-			h1 {
-				color: red;
-				font-size: 24 pt;
-			}
-			h3 {
-				color: pink;
-				font-size: 24 pt;
-			}
-			h4 {
-				color: pink;
-				font-size: 24 pt;
-			}
-		</style>
-	</head>
-	<body>
-		<h1>This webisite has one great purpose!</h1>
-		<h3>To wish to wish you the bestest of days!!!</h3>
-		<br>
-		<h4>Also to inform you that you have permanently won the game!<h4>
-		<button id="buttonHere" onclick="funny()">donotpressitwillruinyourday</button>
-		<script>
-			function funny() {
-				while (true) {
-					window.open()
-				}
-			}
-		</script>
-	</body>
+  <head>
+    <title>Useful Website</title>
+    <style>
+      body {
+        background-color: #0000ef;
+        text-align: center;
+        background-image: url('beans.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      h1 {
+        color: orange;
+        font-family: 'Comic Sans MS';
+      }
+
+      h3 {
+        color: red;
+        font-family: 'Comic Sans MS', serif;
+      }
+
+      h4 {
+        color: pink;
+        font-family: sans-serif;
+      }
+
+      p {
+        color: darkcyan;
+        font-family: 'Helvetica';
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="font-size: 100px;">This webisite has one great purpose!</h1>
+    <h3 style="font-size: 30px;">To inform you of something you totally couldn't find out an easier way!</h3>
+    <button onclick="whattimeisit()">What time is it?</button>
+    <p style="font-size: 35px;" id="datetime"></p>
+    <br>
+    <img src="buffalo.png" alt="Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo" style="width:500px;height:500px;">
+    <h4 style="font-size: 10px;">Seriously don't look at the bottom right of your screen</h4>
+    <script>
+      function whattimeisit() {
+        var now = new Date();
+        var datetime = now.toLocaleString();
+        document.getElementById("datetime").innerHTML = datetime;
+      }
+    </script>
+  </body>
 </html>

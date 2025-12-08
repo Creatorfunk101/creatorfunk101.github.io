@@ -4,43 +4,80 @@
     <title>Useful Website</title>
     <style>
       body {
-        background-color: #0000ef;
         text-align: center;
-        background-image: url('beans.jpg');
+        background-image: url('sploosh.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
       }
 
       h1 {
-        color: orange;
-        font-family: 'Comic Sans MS';
+        color: lightcyan;
+		font-size: 80px;
+        font-family: 'Levitica';
+		width: 1415px;
+		border: 10px solid lightgrey;
+		padding: 50px;
+		margin: auto;
+		background-color: rgba(0, 0, 100, 0.5);
       }
 
       h3 {
-        color: red;
-        font-family: 'Comic Sans MS', serif;
+        color: cyan;
+		font-size: 35px;
+        font-family: 'Levetica', serif;
+		width: 1200px;
+		border: 10px solid grey;
+		padding: 50px;
+		margin: auto;
+		background-color: rgba(0, 0, 20, 0.5);
       }
 
       h4 {
         color: pink;
+		font-size: 10px;
         font-family: sans-serif;
       }
 
       p {
         color: darkcyan;
+		font-size: 35px;
         font-family: 'Helvetica';
+		width: 300px;
+		border: 10px solid purple;
+		padding: 20px;
+		margin: auto;
+		background-color: rgba(20, 20, 20, 0.5);
       }
+	  .timecheck {
+		background-color: #4CAF50;
+		color: white;
+		padding: 16px 33px;
+		text-align: center;
+		text-decoration: bold;
+		display: inline-block;
+		font-size: 21px;
+		margin: 5px 3px;
+		cursor: pointer;
+		border-radius: 8px;
+		border: 2px;
+		}
+
+		/* Hover effect */
+		.timecheck:hover {
+		background-color: #45c049;
+		}
     </style>
   </head>
   <body>
-    <h1 style="font-size: 100px;">This webisite has one great purpose!</h1>
-    <h3 style="font-size: 30px;">To inform you of something you totally couldn't find out an easier way!</h3>
-    <button onclick="whattimeisit()">What time is it?</button>
-    <p style="font-size: 35px;" id="datetime"></p>
+    <h1>This webisite has one great purpose!</h1>
+    <h3>To inform you of something you totally couldn't find out an easier way!</h3>
+    <button class="timecheck" onclick="whattimeisit()">What time is it?</button>
+	<br>
+    <p id="datetime"></p>
     <br>
-    <img src="buffalo.png" alt="Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo" style="width:500px;height:500px;">
-    <h4 style="font-size: 10px;">Seriously don't look at the bottom right of your screen</h4>
+    <img src="temp.png" alt="temp image" style="width:500px;height:500px;">
+    <h4>Seriously don't look at the bottom right of your screen</h4>
     <script>
       function whattimeisit() {
         var now = new Date();

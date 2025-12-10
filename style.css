@@ -1,0 +1,73 @@
+      body {
+        text-align: center;
+        background-image: url('sploosh.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      h1 {
+        color: lightcyan;
+		font-size: 80px;
+        font-family: 'Levitica';
+		width: 1415px;
+		border: 10px solid lightgrey;
+		padding: 50px;
+		margin: auto;
+		background-color: rgba(0, 0, 100, 0.5);
+      }
+	  h2 {
+        color: lightblue;
+		font-size: 35px;
+        font-family: 'Comic Sans MS', serif;
+		width: 1200px;
+		border: 10px solid grey;
+		padding: 50px;
+		margin: auto;
+		background-color: rgba(0, 0, 20, 0.5);
+		}
+      h3 {
+        color: cyan;
+		font-size: 35px;
+        font-family: 'Levetica', serif;
+		width: 1200px;
+		border: 10px solid grey;
+		padding: 50px;
+		margin: auto;
+		background-color: rgba(0, 0, 20, 0.5);
+      }
+
+      h4 {
+        color: pink;
+		font-size: 10px;
+        font-family: sans-serif;
+      }
+
+      p {
+        color: darkcyan;
+		font-size: 35px;
+        font-family: 'Helvetica';
+		width: 300px;
+		border: 10px solid purple;
+		padding: 20px;
+		margin: auto;
+		background-color: rgba(20, 20, 20, 0.5);
+      }
+	  .timecheck {
+		background-color: #4CAF50;
+		color: white;
+		padding: 16px 33px;
+		text-align: center;
+		text-decoration: bold;
+		display: inline-block;
+		font-size: 21px;
+		margin: 5px 3px;
+		cursor: pointer;
+		border-radius: 8px;
+		border: 2px;
+		}
+
+		/* Hover effect */
+		.timecheck:hover {
+		background-color: #45c049;
+		}
